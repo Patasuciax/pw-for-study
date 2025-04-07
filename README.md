@@ -1,1 +1,1 @@
-# pw-for-study
+# Playwright for study
