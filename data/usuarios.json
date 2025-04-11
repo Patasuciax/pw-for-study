@@ -1,0 +1,9 @@
+{
+    "usuario": {
+        "correcto": {
+            "nombre": "Juan",
+            "contrasena": "Abc123*",
+            "correoElectronico": "gustavo@gmail.com"
+        }
+    }
+}
