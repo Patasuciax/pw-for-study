@@ -1,0 +1,22 @@
+{
+  "name": "pw-for-study",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Patasuciax/pw-for-study.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Patasuciax/pw-for-study/issues"
+  },
+  "homepage": "https://github.com/Patasuciax/pw-for-study#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.51.1",
+    "@types/node": "^22.14.0"
+  }
+}
