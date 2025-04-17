@@ -27,14 +27,20 @@ export default class SignupPage {
     return await this.buttonRegistrarse.click({force: true});
   }
 
-  async fillRegistro(usuario: any) {
+  async fillRegistro(usuario: any): Promise<string> {
     const emailUnico = usuario.correoElectronico.replace('@', '+' + Date.now() + '@');
     await this.inputNombre.fill(usuario.nombre);
     await this.inputCorreoElectronico.fill(emailUnico);
     await this.inputContrasena.fill(usuario.contrasena);
     await this.inputConfirmarContrasena.fill(usuario.contrasena);
     await this.clickButtonRegistrarse();
-    await expect(this.alertRegistroExitoso).toBeVisible();
+    await expect(this.alertRegistroExitoso).toBeVisible({
+      timeout: 7000,
+    });
+    await expect(this.alertRegistroExitoso).not.toBeVisible({
+      timeout: 7000,
+    });
+    return emailUnico;
   }
 
 }
